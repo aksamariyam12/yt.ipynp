@@ -42,7 +42,7 @@ def download_youtube_audio(url):
         'postprocessors': [{
             'key': 'FFmpegExtractAudio',
             'preferredcodec': 'mp3',
-             'preferredquality': '192',
+            'preferredquality': '192',
         }],
     }
     with yt_dlp.YoutubeDL(audio_opts) as ydl:
